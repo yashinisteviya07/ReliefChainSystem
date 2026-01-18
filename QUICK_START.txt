@@ -1,0 +1,65 @@
+🚀 QUICK START GUIDE - ReliefChain
+================================================
+
+✅ ALL SERVICES ARE RUNNING:
+- Blockchain Node: http://localhost:8545
+- Backend API: http://localhost:3001
+- Frontend: http://localhost:3000
+
+📝 METAMASK SETUP (IMPORTANT!):
+
+1. Add Hardhat Network to MetaMask:
+   - Network Name: Hardhat Local
+   - RPC URL: http://127.0.0.1:8545
+   - Chain ID: 31337
+   - Currency Symbol: ETH
+
+2. Import a Test Account (use any of these private keys):
+   
+   Account #0 (Admin/Deployer):
+   Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+   Address: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+   
+   Account #1:
+   Private Key: 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+   Address: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+   
+   Account #2:
+   Private Key: 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a
+   Address: 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC
+
+3. Switch MetaMask to the Hardhat Local network
+
+4. Go to http://localhost:3000
+
+5. Click "Connect Wallet" or "Get Started"
+
+6. Sign the message in MetaMask when prompted
+
+🎯 REGISTRATION PROCESS:
+
+Since you're a new user, you'll need to register:
+- Click "Register as Donor", "Register for Relief", or "Register as Vendor"
+- Fill in all required fields with proper validation
+- Complete KYC verification
+- Submit registration
+
+⚠️ TROUBLESHOOTING:
+
+If you see "Failed to verify signature":
+- Make sure MetaMask is on Hardhat Local network (Chain ID: 31337)
+- Make sure you imported a test account
+- Try refreshing the page and reconnecting wallet
+- Check that all 3 services are running (blockchain, backend, frontend)
+
+If you see "Failed to generate authentication nonce":
+- Backend server might not be running
+- Check http://localhost:3001/health should return OK
+
+📊 CONTRACT ADDRESS:
+0x5FbDB2315678afecb367f032d93F642f64180aa3
+
+🔑 ADMIN ACCOUNT:
+The deployer account (Account #0) has admin privileges by default.
+
+💡 TIP: Keep this window open while testing!

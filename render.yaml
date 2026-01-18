@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: disaster-relief-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: BLOCKCHAIN_RPC_URL
+        value: https://mainnet.infura.io/v3/YOUR_INFURA_KEY
+  
+  - type: web
+    name: disaster-relief-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build

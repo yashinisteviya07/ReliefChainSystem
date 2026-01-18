@@ -1,0 +1,21 @@
+{
+  "name": "reliefchain",
+  "version": "1.0.0",
+  "description": "ReliefChain - Blockchain-based transparent relief fund distribution system",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../blockchain && npm install",
+    "dev": "concurrently \"npm run blockchain\" \"npm run backend\" \"npm run frontend\"",
+    "blockchain": "cd blockchain && npx hardhat node",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "deploy": "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "test": "cd blockchain && npx hardhat test"
+  },
+  "keywords": ["blockchain", "reliefchain", "relief-distribution", "ethereum", "solidity", "react", "transparency"],
+  "author": "East India Blockchain Summit 2.0",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
